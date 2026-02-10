@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anonymous | Send a Message</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="glass-card">
+            <div class="profile-section">
+                <div class="avatar-wrapper">
+                    <img src="https://api.dicebear.com/7.x/micah/svg?seed=Felix&backgroundColor=ff0080" alt="User">
+                </div>
+                <h1>@anonymous</h1>
+                <p>Send me an anonymous message! I won't know who sent it. 😉</p>
+            </div>
+            
+            <form id="messageForm">
+                <div class="input-container">
+                    <textarea id="messageInput" maxlength="300" placeholder="Type your secret message..." required></textarea>
+                    <div class="char-count"><span id="current">0</span>/300</div>
+                </div>
+                <button type="submit" id="submitBtn">
+                    <span class="btn-text">Send Message</span>
+                </button>
+            </form>
+        </div>
+        <div id="toast" class="toast hidden">Sent to the shadows! 👻</div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
